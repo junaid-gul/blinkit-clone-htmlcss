@@ -1,0 +1,466 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --primarry-heading: #e6e0dd;
+    --secondary-color: #fdfefd;
+    --title-color: #7099c9;
+    --font-main: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+}
+
+p,
+li,
+a {
+    font-weight: 400;
+}
+
+
+
+/* utlity classes */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+
+
+
+/* header section */
+.site_header {
+
+    border-top: 1px solid var(--primarry-heading);
+    border-bottom: 1px solid var(--primarry-heading);
+    align-items: center;
+    gap: 40px;
+
+}
+
+.header_left {
+    align-items: center;
+}
+
+.blinit_logo {
+    padding: 25px 30px;
+    border-right: 1px solid var(--primarry-heading);
+}
+
+.header_location {
+    padding: 20px 30px;
+}
+
+.header_search_bar {
+    background-color: #f8f8f8;
+    border-radius: 15px;
+    padding: 15px;
+    flex-grow: 1;
+    align-items: center;
+    border: 1px solid #e6e0dd;
+    gap: 10px;
+}
+
+.header_search_bar button {
+    border: none;
+    background-color: transparent;
+}
+
+.header_search_bar input {
+    flex-grow: 1;
+    border: none;
+    background-color: transparent;
+}
+
+.header_right {
+    margin-right: 50px;
+    gap: 40px;
+}
+
+
+#login {
+    background-color: transparent;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+    color: #1f2937;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+#login:hover {
+    background-color: #f9fafb;
+    color: #111827;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+
+#my_cart {
+    background-color: #10b981;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.25);
+}
+
+#my_cart:hover {
+    background-color: #0ea672;
+    box-shadow: 0 6px 12px rgba(16, 185, 129, 0.35);
+}
+
+
+
+/* banner section */
+
+.banner-section-img {
+    overflow: hidden;
+}
+
+.banner-section-img img {
+    width: 100%;
+    height: 234px;
+    overflow: hidden;
+
+}
+
+/* promo banner section */
+.promo-banner-wrapper {
+    gap: 1%;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-evenly;
+
+}
+
+.promo-card {
+    width: 23%;
+    height: 195px;
+
+}
+
+.promo-card img {
+    width: 100%;
+    height: 195px;
+    overflow: hidden;
+}
+
+/* category section */
+
+
+.category-wrapper {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+.category-item {
+    width: 9%;
+    height: 188px;
+
+}
+
+/*  product section */
+
+.product-section-wrapper {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+
+.heading-product {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 12px;
+}
+
+.heading-product h3 {
+    color: #1f2937;
+    /* dark gray, more readable */
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+}
+
+.heading-product p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #0c831f;
+    padding: 6px 12px;
+    border: 1px solid #0c831f;
+    border-radius: 6px;
+    background-color: #f0fdf4;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.heading-product p:hover {
+    background-color: #dcfce7;
+    color: #065f46;
+    border-color: #065f46;
+}
+
+
+.product-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.product-card {
+    cursor: pointer;
+    flex: 0 1 0%;
+    min-width: 200px;
+    max-width: 200px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05),
+        0 4px 8px rgba(0, 0, 0, 0.03),
+        0 6px 12px rgba(0, 0, 0, 0.02);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08),
+        0 12px 24px rgba(0, 0, 0, 0.06),
+        0 20px 40px rgba(0, 0, 0, 0.05);
+    border-color: #94a3b8;
+}
+
+
+.product-img-class {
+    width: 140px;
+    text-align: center;
+}
+
+.dilvery-time {
+    display: flex;
+    align-self: flex-start;
+    gap: 4px;
+}
+
+.dilvery-time img {
+    width: 11px;
+    height: 11px;
+}
+
+.dilvery-time p {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 9px;
+    color: rgb(54, 54, 54);
+}
+
+.product-name {
+    align-self: flex-start;
+}
+
+.product-name h3 {
+    overflow: hidden;
+    color: rgb(31, 31, 31);
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    width: 100%;
+    height: 36px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+.product-weight {
+    display: flex;
+    align-self: flex-start;
+}
+
+.product-weight p {
+    font-size: 12px;
+    color: #666666;
+}
+
+.proudct-action {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.proudct-action p {
+    width: 90px;
+    font-size: 12px;
+    color: #1f1f1f;
+}
+
+.proudct-action button {
+    cursor: pointer;
+    width: 66px;
+    height: 31px;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(49, 134, 22);
+    background-color: rgb(247, 255, 249);
+    border: 1px solid rgb(49, 134, 22);
+    border-radius: 0.375rem;
+    transition: all 0.3s ease;
+}
+
+.proudct-action button:hover {
+    background-color: rgb(225, 255, 230);
+    color: rgb(24, 90, 10);
+    transform: scale(1.05);
+}
+
+
+
+
+
+/* footer */
+.footer-section {
+    margin-top: 20px;
+    background-color: #f9fafb;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.footer-main-wraper {
+    display: flex;
+    gap: 40px;
+
+
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section li {
+    margin-bottom: 15px;
+}
+
+.footer-section li a {
+    text-decoration: none;
+    color: #4B5563;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-section li a:hover {
+    color: #111827;
+    text-decoration: underline;
+}
+
+.left-column {
+    min-width: 500px;
+
+
+}
+
+.left-column-wraper {
+    display: flex;
+    gap: 80px;
+
+}
+
+.left-column h3 {
+    /* width: 100%; */
+    margin-bottom: 20px;
+}
+
+.right-column {
+    flex-grow: 1;
+
+
+}
+
+.right-column-wraper {
+    display: flex;
+    gap: 80px;
+
+
+}
+
+.right-column h3 {
+    /* width: 100%; */
+    margin-bottom: 20px;
+
+}
+
+/* footer loggo section */
+.footer-logo-section {
+    background-color: #e5e7eb;
+    /* better contrast, clean */
+    color: #374151;
+    /* dark gray text */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #d1d5db;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#apple-store {
+    height: 30px;
+    width: 92px;
+
+}
+
+#play-store {
+    height: 30px;
+    width: 92px;
+
+}
+
+.footer-logo img {
+    width: 40px;
+    height: 40px;
+}

@@ -1,0 +1,50 @@
+/* responsive for mobile */
+
+@media only screen and (min-width: 200px) and (max-width: 575px) {
+
+    /* header section  */
+    .site_header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        gap: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+    .blinit_logo {
+        border: none;
+        padding: 10px;
+    }
+
+    .header_location {
+        padding: 10px;
+    }
+
+    .header_search_bar {
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .header_right {
+        display: none;
+    }
+
+    /* banner section */
+    .banner-section-img {
+        display: none;
+    }
+
+    /* promo banner section */
+    .promo-banner-wrapper {
+        display: none;
+
+
+    }
+
+    .promo-card {
+        width: 99%;
+    }
+}

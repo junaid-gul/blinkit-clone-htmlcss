@@ -96,6 +96,27 @@ a {
     gap: 40px;
 }
 
+.circle-user {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f3f4f6;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+   
+}
+
+.circle-user i {
+    font-size: 40px;
+    color: #6b7280;
+}
+
+.circle-user:hover {
+    background-color: #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
 
 #login {
     background-color: transparent;
@@ -146,6 +167,13 @@ a {
     height: 234px;
     overflow: hidden;
 
+}
+
+.tablet-banner-img{
+    width: 100%;
+    height: 375px;
+    overflow: hidden;
+    display: none;
 }
 
 /* promo banner section */
@@ -238,14 +266,15 @@ a {
 .product-grid {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     gap: 10px;
 }
 
 .product-card {
     cursor: pointer;
     flex: 0 1 0%;
-    min-width: 200px;
-    max-width: 200px;
+    width: 200px;
+    width: 200px;
     background-color: white;
     border: 1px solid #e5e7eb;
     border-radius: 12px;
@@ -260,6 +289,10 @@ a {
     gap: 5px;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
+
+
+
+
 
 .product-card:hover {
     transform: translateY(-10px);
@@ -327,7 +360,7 @@ a {
 }
 
 .proudct-action p {
-    width: 90px;
+    width: 66px;
     font-size: 12px;
     color: #1f1f1f;
 }
@@ -362,6 +395,7 @@ a {
     padding-top: 60px;
     padding-bottom: 30px;
     border-top: 1px solid #e5e7eb;
+    overflow: hidden;
 }
 
 .footer-main-wraper {
@@ -432,13 +466,12 @@ a {
 /* footer loggo section */
 .footer-logo-section {
     background-color: #e5e7eb;
-    /* better contrast, clean */
     color: #374151;
-    /* dark gray text */
     padding: 20px 0;
     text-align: center;
     font-size: 14px;
     border-top: 1px solid #d1d5db;
+    overflow: hidden;
 }
 
 .footer-logo {
@@ -447,6 +480,7 @@ a {
     align-items: center;
     gap: 40px;
 }
+
 
 #apple-store {
     height: 30px;
@@ -463,4 +497,9 @@ a {
 .footer-logo img {
     width: 40px;
     height: 40px;
+}
+.footer-logos {
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }

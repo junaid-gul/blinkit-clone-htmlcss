@@ -1,50 +1,219 @@
-/* responsive for mobile */
+/* responsive for tablets */
 
-@media only screen and (min-width: 200px) and (max-width: 575px) {
-
-    /* header section  */
-    .site_header {
+@media screen and (max-width : 991px) {
+ 
+    /* heder section */
+    .site_header{
+        overflow: hidden;
         flex-direction: column;
-        justify-content: center;
-        align-items: stretch;
-        gap: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
+        gap: 5px;
+        padding: 5px 20px;
+        border-bottom: 2px solid #e5e7eb;
+        
 
     }
-
-    .blinit_logo {
-        border: none;
-        padding: 10px;
+    .blinit_logo{
+        display: none;
+    }
+    .header_left{
+        
+        justify-content: space-between;
+        width: 100%;
+    }
+    .header_location{
+    
+        padding: 10px 0;
+    }
+    .header_right{
+        display: none;
     }
 
-    .header_location {
-        padding: 10px;
+    .circle-user {
+        display: block;
     }
 
     .header_search_bar {
+        width: 100%;
         padding: 10px;
-        border-radius: 5px;
-        margin-bottom: 10px;
-    }
-
-    .header_right {
-        display: none;
+        margin-bottom: 5px;
+        border-radius: 10px;
     }
 
     /* banner section */
-    .banner-section-img {
+    .banner-section-img{
+        padding: 20px;
+    }
+    .banner-img {
         display: none;
     }
 
-    /* promo banner section */
+    .tablet-banner-img {
+        display: block;
+        width: 100%;
+        height: 375px;
+        overflow: hidden;
+    }
+
+    /* promoo banner section */
     .promo-banner-wrapper {
-        display: none;
-
-
+        padding: 0px 20px;
+        gap: 0%;
+        
+    }
+    .promo-card {
+        width: 49%;
+        height: 300px;
+        margin-bottom: 10px;
+        margin-right: 1%;
+        
+    }
+    .promo-card img {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
     }
 
+    /* category section */
+    
+.category-wrapper {
+    margin-top: 20px;
+    padding: 0px 20px;
+    gap: 1%;
+}
+
+.category-item {
+    width: 19%;
+    height: 200px;
+
+}
+
+/* product section  */
+.product-section-wrapper{
+    padding: 0px 20px ;
+}
+   .product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        justify-items: center;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 300px;
+    }
+    .proudct-action p{
+        width: 180px;
+    }
+
+    /* footer section */
+
+    .footer-main-wraper{
+        flex-direction: column;
+        margin-left: 50px;
+       
+    }
+
+}
+
+/* media query from 421px to 768px */
+
+@media screen and (min-width: 421px) and (max-width : 768px) {
+
+    /* product section */
+    .heading-product{
+        
+        margin-left: 20px;
+        
+    }
+    .heading-product p{
+        margin-right: 40px;
+    }
+     .product-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-items: center;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 300px;
+    }
+    .proudct-action p{
+        width: 180px;
+    }
+
+
+}
+
+/* media query for mobile devices */
+@media screen and (max-width : 420px){
+
+    /* product section */
     .promo-card {
         width: 99%;
+        height: 300px;
+        margin-bottom: 10px;
+        margin-right: 1%;
+        
     }
+
+    
+    /* category section */
+    
+.category-wrapper {
+    margin-top: 20px;
+    padding: 0px 5px;
+    gap: 1%;
+}
+    .category-item {
+    width: 30%;
+    height: 200px;
+
+}
+
+    /* product section  */
+    /* .heading-product h3{
+        font-size: 15px;
+    } */
+    .product-section-wrapper{
+    padding: 0px 2px ;
+}
+    
+  .product-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        justify-items: center;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 300px;
+    }
+    .proudct-action p{
+        width: 180px;
+    }
+
+    .hide-these-section{
+        display: none;
+    }
+
+    /* footer section */
+    .footer-main-wraper{
+        flex-direction: column;
+        margin-left: 0px;
+        padding: 20px;
+    }
+
+    .footer-logo{
+        flex-direction: column;
+
+    }
+    .footer-logos {
+    gap: 10px;
+    align-items: center;
+}
+    
 }
